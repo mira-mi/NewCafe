@@ -6,7 +6,8 @@
 #include <iostream>
 
 using namespace std;
-
+// ascii art is from https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Slant&text=Magical%20Cafe
+//used from euchre project and stack overflow such as user input
 // realized float may be better for this
 static float total;
 static float tax = 2.50;
@@ -16,6 +17,7 @@ double fountaindrink = 1.50;
 double breakfastsandwich = 4.35;
 double donut = 1.25;
 double croissant = 3.00;
+//user input
 char answer = 0;
 int amount = 0;
 
@@ -40,6 +42,8 @@ int main()
                Donut -- $1.25
                Croissant -- $3.00)" << '\n';
 
+	// for this I did try to do a loop but I couldn't, really it wouldn't work
+	//also had issues with user input and now it works just fine
 	cout << "Would you like to buy a bagel for $" << bagel << "? Please type in yes or no: ";
 	string answer;
 	std::cin >> answer;
@@ -75,13 +79,14 @@ int main()
 	}
 	else if (answerT == "no") {
 		cout << "Awwww, you don't want fountain drinks :( " << endl;
-		cout << "An amount of $" << total << " has been added to your bag.";
+		cout << "An amount of $" << total + bagel << " has been added to your bag.";
 	}
 
 	cout << "Would you like to buy a breakfast sandwich for $" << breakfastsandwich << "? Please type in yes or no: ";
 	string answerB;
 	std::cin >> answerB;
 	//cout << " " << endl;
+	//put in the wrong place
 	cout << "you type in: " << answerB << ".";
 	cout << " " << endl;
 	if (answerB == "yes") {
@@ -95,7 +100,7 @@ int main()
 	}
 	else if (answerB == "no") {
 		cout << "Awwww, you don't want breakfast sandwiches :( " << endl;
-		cout << "An amount of $" <<total<< " has been added to your bag.";
+		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 
 	cout << "Would you like to buy a donut for $" << donut << "? Please type in yes or no: ";
