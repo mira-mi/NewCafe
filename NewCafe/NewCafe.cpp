@@ -162,6 +162,7 @@ int main()
 	cout << " " << endl;
 	//std::setprecision(money = money - total);
 	money = money - total;
+	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
 	cout << setprecision(2) << fixed << "Your change is $" << money << ".";
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
