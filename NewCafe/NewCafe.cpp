@@ -12,6 +12,8 @@ using namespace std;
 static float total;
 static float tax = 2.50;
 // actual food offered
+//had outside help to make this feel more believable
+//my bf goes to places like Stan's and Dunkin a lot so he really helped
 double bagel = 2.25;
 double fountaindrink = 1.50;
 double breakfastsandwich = 4.35;
@@ -23,7 +25,7 @@ int amount = 0;
 
 int main()
 {
-	
+	// only added the ascii art because I love the way it looks and it makes it personal
 
 
 	cout << "Welcome to the " << endl;
