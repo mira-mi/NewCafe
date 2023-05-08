@@ -11,15 +11,15 @@ the lowest amount of currency possible (example: if i pay for something that is 
 Not a lot to do but I want to try something differnt to show how much I have improved over the year since my first C++ class. These are things I want to implement in this as well.
 - I would like to incorporate ascii art once again
 - fixing old mistakes ( I made something like this last year and realized it didn't really work. Now it works a whole lot better)
-- use a menu of 5 items (has 5 items on it)
-- give correct change in the lowest amount of currency possible (works but not so good)
-- create good usability (easily understandable)
+
+- Create good usability (easily understandable)
 
 Required Functionality
 - Model a Cafe (Cafe has been modeled)
 - Menu of 5 items (There is a menu with 5 items)
 - Users can choose items and pay (Users can)
 - Users can only pay in whole numbers (They can type it in but aren't held to it)
-- gives change (It does now, no longer rounds up)
+- Breaks down to lowest amount of currency (Gives change but no like the example)
+ 
 
 The compiler I used was the linux add on with visual studio using cmake. 
