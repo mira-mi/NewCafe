@@ -19,7 +19,7 @@ Required Functionality
 - Menu of 5 items (There is a menu with 5 items)
 - Users can choose items and pay (Users can)
 - Users can only pay in whole numbers (They can type it in but aren't held to it)
-- Breaks down to lowest amount of currency (Gives change but no like the example)
+- Breaks down to lowest amount of currency (Gives change but not like the example)
  
 
 The compiler I used was the linux add on with visual studio using cmake. 
