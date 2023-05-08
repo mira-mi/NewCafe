@@ -46,7 +46,7 @@ int main()
 	cout << "you type in: " << answer << ".";
 	if (answer == "yes") {
 		int amount;
-		cout << "We have 12 bagels?" << endl;
+		cout << "We have 12 bagels available?" << endl;
 		cout << "How many did you want? Please type in a number 1 - 12." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
@@ -57,6 +57,22 @@ int main()
 		cout << "Your total is $" << total << ".";
 	}
 	
+	cout << "Would you like to buy a bagel for $" << fountaindrink << "? Please type in yes or no: ";
+	string answer;
+	std::cin >> answer;
+	cout << "you type in: " << answer << ".";
+	if (answer == "yes") {
+		int amount;
+		cout << "We have 6 fountain drinks available?" << endl;
+		cout << "How many did you want? Please type in a number 1 - 12." << endl;
+		std::cin >> amount;
+		cout << "You entered: " << amount << ".";
+		cout << "Your total is $" << amount * bagel + total + tax << ".";
+	}
+	else if (answer == "no") {
+		cout << "Awwww, you don't want bagels :( " << endl;
+		cout << "Your total is $" << total << ".";
+	}
 	
 	
 }
