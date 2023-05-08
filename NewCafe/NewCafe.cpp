@@ -22,6 +22,7 @@ double croissant = 3.00;
 //user input
 char answer = 0;
 int amount = 0;
+int money = 0;
 
 int main()
 {
@@ -150,7 +151,17 @@ int main()
 		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 
+	cout << "Now you're ready for checkout." << endl;
+	cout << "Your total is $" << total << ".";
+	cout << " " << endl;
+	cout << "You have to give whole numbers for money, no change." << endl;
+	std::cin >> money;
+	cout << "Your entered: $" << money << ".";
+	cout << " " << endl;
+	money = money - total;
+	cout << "Your change is $" << money << ".";
+	cout << " " << endl;
+	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
-	
 	
 }
