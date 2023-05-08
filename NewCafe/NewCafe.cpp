@@ -44,12 +44,14 @@ int main()
 	string answer;
 	std::cin >> answer;
 	cout << "you type in: " << answer << ".";
+	cout << " " << endl;
 	if (answer == "yes") {
 		int amount;
 		cout << "We have 12 bagels available?" << endl;
 		cout << "How many did you want? Please type in a number 1 - 12." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
+		cout << " " << endl;
 		cout << "Your total is $" << amount * bagel + total + tax << ".";
 	}
 	else if (answer == "no") {
@@ -61,35 +63,60 @@ int main()
 	string answerT;
 	std::cin >> answerT;
 	cout << "you type in: " << answerT << ".";
+	cout << " " << endl;
 	if (answerT == "yes") {
 		int amount;
 		cout << "We have 6 fountain drinks available?" << endl;
 		cout << "How many did you want? Please type in a number 1 - 6." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
+		cout << " " << endl;
 		cout << "An amount of $" << amount * fountaindrink + total + tax << "has been added to your bag.";
 	}
 	else if (answerT == "no") {
 		cout << "Awwww, you don't want fountain drinks :( " << endl;
-		cout << "An amount of $" << amount * fountaindrink + total + tax << "has been added to your bag.";
+		cout << "An amount of $" << total << "has been added to your bag.";
 	}
 
 	cout << "Would you like to buy a breakfast sandwich for $" << breakfastsandwich << "? Please type in yes or no: ";
 	string answerB;
 	std::cin >> answerB;
+	//cout << " " << endl;
 	cout << "you type in: " << answerB << ".";
+	cout << " " << endl;
 	if (answerB == "yes") {
 		int amount;
 		cout << "We have 7 fountain drinks available?" << endl;
 		cout << "How many did you want? Please type in a number 1 - 7." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
+		cout << " " << endl;
 		cout << "An amount of $" << amount * breakfastsandwich + total + tax << "has been added to your bag.";
 	}
 	else if (answerB == "no") {
 		cout << "Awwww, you don't want breakfast sandwiches :( " << endl;
+		cout << "An amount of $" <<total<< "has been added to your bag.";
+	}
+
+	cout << "Would you like to buy a donut for $" << donut << "? Please type in yes or no: ";
+	string answerD;
+	std::cin >> answerD;
+	cout << "you type in: " << answerD << ".";
+	cout << " " << endl;
+	if (answerD == "yes") {
+		int amount;
+		cout << "We have 7 fountain drinks available?" << endl;
+		cout << "How many did you want? Please type in a number 1 - 7." << endl;
+		std::cin >> amount;
+		cout << "You entered: " << amount << ".";
+		cout << " " << endl;
 		cout << "An amount of $" << amount * breakfastsandwich + total + tax << "has been added to your bag.";
 	}
+	else if (answerD == "no") {
+		cout << "Awwww, you don't want breakfast sandwiches :( " << endl;
+		cout << "An amount of $" << total << "has been added to your bag.";
+	}
+
 
 	
 	
