@@ -56,6 +56,8 @@ int main()
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
 		cout << " " << endl;
+		//used to make the total actually add up
+		//from stack overflow because I couldn't figure out how to add on to the total
 		total = total + bagel * amount + tax;
 		cout << "Your total is $" << total << ".";
 	}
