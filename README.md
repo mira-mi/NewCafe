@@ -1,5 +1,5 @@
-# NewCafe
-## (Sadly it's not very magical, in fact it's kinda boring)
+# New Cafe
+## (It's Magically Expensive)
 
 This is my final assignment for my C++ 2 class and I was tasked with making a cafe.
 I've done this before and I decided to learn another way to make this easier to navigate, my biggest issue so far is getting the map to actually show when you compile it.
