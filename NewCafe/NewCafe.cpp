@@ -56,7 +56,8 @@ int main()
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
 		cout << " " << endl;
-		cout << "Your total is $" << amount * bagel + total + tax << ".";
+		total = total + bagel * amount + tax;
+		cout << "Your total is $" << total << ".";
 	}
 	else if (answer == "no") {
 		cout << "Awwww, you don't want bagels :( " << endl;
@@ -75,11 +76,12 @@ int main()
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
 		cout << " " << endl;
-		cout << "An amount of $" << amount * fountaindrink + total + tax << " has been added to your bag.";
+		total = total + fountaindrink * amount + tax;
+		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 	else if (answerT == "no") {
 		cout << "Awwww, you don't want fountain drinks :( " << endl;
-		cout << "An amount of $" << total + bagel << " has been added to your bag.";
+		cout << "An amount of $" << total  << " has been added to your bag.";
 	}
 
 	cout << "Would you like to buy a breakfast sandwich for $" << breakfastsandwich << "? Please type in yes or no: ";
@@ -95,8 +97,9 @@ int main()
 		cout << "How many did you want? Please type in a number 1 - 7." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
+		total = total + breakfastsandwich * amount + tax;
 		cout << " " << endl;
-		cout << "An amount of $" << amount * breakfastsandwich + total + tax << " has been added to your bag.";
+		cout << "An amount of $" << total  << " has been added to your bag.";
 	}
 	else if (answerB == "no") {
 		cout << "Awwww, you don't want breakfast sandwiches :( " << endl;
