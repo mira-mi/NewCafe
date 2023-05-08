@@ -4,12 +4,14 @@
 #include "NewCafe.h"
 #include <string>
 #include <iostream>
+#include <math.h>
+#include <iomanip>
 
 using namespace std;
 // ascii art is from https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Slant&text=Magical%20Cafe
 //used from euchre project and stack overflow such as user input
 // realized float may be better for this
-static float total;
+static double total;
 static float tax = 2.50;
 // actual food offered
 //had outside help to make this feel more believable
@@ -22,7 +24,7 @@ double croissant = 3.00;
 //user input
 char answer = 0;
 int amount = 0;
-int money = 0;
+double money = 0.00;
 
 int main()
 {
@@ -154,13 +156,13 @@ int main()
 	cout << "Now you're ready for checkout." << endl;
 	cout << "Your total is $" << total << ".";
 	cout << " " << endl;
-	cout << "You have to give whole numbers for money, no change." << endl;
+	cout << "You have to give whole numbers for money." << endl;
 	std::cin >> money;
 	cout << "Your entered: $" << money << ".";
 	cout << " " << endl;
+	//std::setprecision(money = money - total);
 	money = money - total;
-	
-	cout << "Your change is $" << money << ".";
+	cout << setprecision(2) << fixed << "Your change is $" << money << ".";
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
