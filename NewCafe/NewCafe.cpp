@@ -57,22 +57,40 @@ int main()
 		cout << "Your total is $" << total << ".";
 	}
 	
-	cout << "Would you like to buy a bagel for $" << fountaindrink << "? Please type in yes or no: ";
-	string answer;
-	std::cin >> answer;
-	cout << "you type in: " << answer << ".";
-	if (answer == "yes") {
+	cout << "Would you like to buy a fountain drink for $" << fountaindrink << "? Please type in yes or no: ";
+	string answerT;
+	std::cin >> answerT;
+	cout << "you type in: " << answerT << ".";
+	if (answerT == "yes") {
 		int amount;
 		cout << "We have 6 fountain drinks available?" << endl;
-		cout << "How many did you want? Please type in a number 1 - 12." << endl;
+		cout << "How many did you want? Please type in a number 1 - 6." << endl;
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
-		cout << "Your total is $" << amount * bagel + total + tax << ".";
+		cout << "An amount of $" << amount * fountaindrink + total + tax << "has been added to your bag.";
 	}
-	else if (answer == "no") {
-		cout << "Awwww, you don't want bagels :( " << endl;
-		cout << "Your total is $" << total << ".";
+	else if (answerT == "no") {
+		cout << "Awwww, you don't want fountain drinks :( " << endl;
+		cout << "An amount of $" << amount * fountaindrink + total + tax << "has been added to your bag.";
 	}
+
+	cout << "Would you like to buy a breakfast sandwich for $" << breakfastsandwich << "? Please type in yes or no: ";
+	string answerB;
+	std::cin >> answerB;
+	cout << "you type in: " << answerB << ".";
+	if (answerB == "yes") {
+		int amount;
+		cout << "We have 7 fountain drinks available?" << endl;
+		cout << "How many did you want? Please type in a number 1 - 7." << endl;
+		std::cin >> amount;
+		cout << "You entered: " << amount << ".";
+		cout << "An amount of $" << amount * breakfastsandwich + total + tax << "has been added to your bag.";
+	}
+	else if (answerB == "no") {
+		cout << "Awwww, you don't want breakfast sandwiches :( " << endl;
+		cout << "An amount of $" << amount * breakfastsandwich + total + tax << "has been added to your bag.";
+	}
+
 	
 	
 }
