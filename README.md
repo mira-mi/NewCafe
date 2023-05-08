@@ -16,10 +16,10 @@ Not a lot to do but I want to try something differnt to show how much I have imp
 - create good usability (easily understandable)
 
 Required Functionality
-- Model a Cafe (cafe has been modeled)
-- Menu of 5 items (there is a menu with 5 items)
-- Users can choose items and pay (users can)
-- Users can only pay in whole numbers (they can type it in but aren't held to it)
-- gives change (it tends to round it up to three dollars)
+- Model a Cafe (Cafe has been modeled)
+- Menu of 5 items (There is a menu with 5 items)
+- Users can choose items and pay (Users can)
+- Users can only pay in whole numbers (They can type it in but aren't held to it)
+- gives change (It does now, no longer rounds up)
 
 The compiler I used was the linux add on with visual studio using cmake. 
