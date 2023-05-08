@@ -159,6 +159,7 @@ int main()
 	cout << "Your entered: $" << money << ".";
 	cout << " " << endl;
 	money = money - total;
+	
 	cout << "Your change is $" << money << ".";
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
