@@ -118,7 +118,8 @@ int main()
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
 		cout << " " << endl;
-		cout << "An amount of $" << amount * donut + total + tax << " has been added to your bag.";
+		total = total + donut * amount + tax;
+		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 	else if (answerD == "no") {
 		cout << "Awwww, you don't want donuts :( " << endl;
@@ -137,7 +138,8 @@ int main()
 		std::cin >> amount;
 		cout << "You entered: " << amount << ".";
 		cout << " " << endl;
-		cout << "An amount of $" << amount * croissant + total + tax << " has been added to your bag.";
+		total = total + croissant * amount + tax;
+		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 	else if (answerD == "no") {
 		cout << "Awwww, you don't want donuts :( " << endl;
