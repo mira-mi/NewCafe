@@ -28,7 +28,7 @@ double croissant = 3.00;
 char answer = 0;
 int amount = 0;
 int money = 0;
-double change = 0.00;
+//double change = 0.00;
 
 int main()
 {
@@ -157,6 +157,8 @@ int main()
 		cout << "Awwww, you don't want donuts :( " << endl;
 		cout << "An amount of $" << total << " has been added to your bag.";
 	}
+	double change;
+	
 	cout << " " << endl;
 	cout << "Now you're ready for checkout." << endl;
 	cout << "Your total is $" << total << ".";
@@ -165,35 +167,39 @@ int main()
 	std::cin >> money;
 	cout << "Your entered: $" << money << ".";
 	cout << " " << endl;
-	//std::setprecision(money = money - total);
+	//std::set precision(money = money - total);
 	change = money - total;
 
 	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
 	cout << "Your change is $" << change << ".";
 	cout << " " << endl;
+	//coinage = std::round(change * 100); ignore
+
 	//got this from stack overflow and it saved my life
-	int dollar = change / 1;
-	change = std::fmod(change, 1);//change % 1;
+	
+	 //int dollar = change/1;
+	//change = std::fmodf(change, 1);//change % 1;
 
-	int quarters = change  / .25;
-	change = std::fmod(change, .25);//change % 25;
+	 int quarters = change/0.25;
+	change = std::fmodf(change, 0.25);//change % 25;
 
-	int dimes = change / .10;
-	change = std::fmod(change, .10);//change % 10;
+	 //int dimes = change/0.10;
+	//change = std::fmodf(change, 0.10);//change % 10;
 
 	int nickels = change / 0.05;
-	//change = std::fmod(change, .05); //change % 5;
+	change = std::fmodf(change, .05); //change % 5;
 
-	//int pennies = change;
+	int pennies = change;
 	//change = std::fmod(change, .01);//change % 1
+	
 
 	
 
 
-	cout << "The number of dollars is =  " << dollar << endl;
-	cout << "The number of quarters is = " << quarters << endl;
-	cout << "The number of dimes is = " << dimes << endl;
-	cout << "The number of nickels is = " << nickels << endl;
+	cout << "There are " << quarters << " quarters, and "  << nickels << " nickels in your change." << endl;
+	//cout << "The number of quarters is = " << quarters << endl;
+	//cout << "The number of dimes is = " << dimes << endl;
+	//cout << "The number of nickels is = " << nickels << endl;
 	//cout << "The number of pennies is = " << pennies << endl;
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
