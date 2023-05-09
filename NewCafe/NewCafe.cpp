@@ -172,13 +172,13 @@ int main()
 	int dollar = change / 1;
 	change = change / 1;
 
-	int quarters = change / .25;
+	int quarters = change * .25;
 	change = change / 25;
 
-	int dimes = change / .10;
+	int dimes = change * .10;
 	change = change / 10;
 
-	int nickels = change / .05;
+	int nickels = change * .05;
 	change = change / 5;
 
 
