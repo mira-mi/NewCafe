@@ -158,6 +158,7 @@ int main()
 		cout << "Awwww, you don't want donuts :( " << endl;
 		cout << "An amount of $" << total << " has been added to your bag.";
 	}
+
 	double change;
 	
 	cout << " " << endl;
