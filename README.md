@@ -23,6 +23,7 @@ Required Functionality
 - Users can choose items and pay (Users can)
 - Users can only pay in whole numbers (They can type it in but aren't held to it)
 - Breaks down to lowest amount of currency (It gives change, it finally gives change like the example but also the regular way)
- 
+ ## Update
+ - Nickels broke really strange currently fixing the problem
 
 The compiler I used was the linux add on with visual studio using cmake. 
