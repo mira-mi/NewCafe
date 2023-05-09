@@ -184,6 +184,9 @@ int main()
 	int nickels = change / .05;
 	change = std::fmod(change, .05);//change % 5;
 
+	int cent = change / .01;
+	change = std::fmod(change, .01);//change % 0.1
+
 
 	cout << "The number of dollars is =  " << dollar << endl;
 	cout << "The number of quarters is = " << quarters << endl;
