@@ -174,34 +174,37 @@ int main()
 	cout << "Your change is $" << change << ".";
 	cout << " " << endl;
 	//coinage = std::round(change * 100); ignore
+	if (change > 0.00)
+	{
+		//got this from stack overflow and it saved my life
+		int dollar = change / 1;
+		change = std::fmod(change, 1); //change % 1
 
-	//got this from stack overflow and it saved my life
+		int quarters = change / 0.25;
+		change = std::fmod(change, 0.25);//change % 25;
+
+		int dimes = change / 0.10;
+		change = std::fmod(change, 0.10);//change % 10;
+
+		float nickels = change / 0.05;
+		change = std::fmod(change, .05); //change % 5;
+
+		//int pennies = change;
+		//change = std::fmod(change, .01);//change % 1
+
+		cout << "The number of dollars is = " << dollar << endl;
+		cout << "The number of quarters is = " << quarters << endl;
+		cout << "The number of dimes is = " << dimes << endl;
+		cout << "The number of nickels is = " << nickels << endl;
+		//cout << "The number of pennies is = " << pennies << endl;
+		cout << " " << endl;
+	}
+	else {
+		cout << "You don't have change!" << endl;
+	}
 	
-	 //int dollar = change/1;
-	//change = std::fmodf(change, 1);//change % 1;
-
-	 int quarters = change/0.25;
-	change = std::fmodf(change, 0.25);//change % 25;
-
-	 //int dimes = change/0.10;
-	//change = std::fmodf(change, 0.10);//change % 10;
-
-	int nickels = change / 0.05;
-	change = std::fmodf(change, .05); //change % 5;
-
-	int pennies = change;
-	//change = std::fmod(change, .01);//change % 1
 	
 
-	
-
-
-	cout << "There are " << quarters << " quarters, and "  << nickels << " nickels in your change." << endl;
-	//cout << "The number of quarters is = " << quarters << endl;
-	//cout << "The number of dimes is = " << dimes << endl;
-	//cout << "The number of nickels is = " << nickels << endl;
-	//cout << "The number of pennies is = " << pennies << endl;
-	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
 	
