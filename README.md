@@ -6,6 +6,7 @@ I've done this before and I decided to learn another way to make this easier to 
 ## Update
 - map doesn't exist
 
+## Requirements and Personal
 This is what we have to do for the project which I will paste below.
 - your job is to model a cafe. you must have a menu of 5 items with prices. users can choose items and pay. they can only pay in whole dollars and you must give change in
 the lowest amount of currency possible (example: if i pay for something that is 2.35 cents with 5 dollars i must get back 1 nickle, 1 dime, 2 quarters and 2 dollars)
