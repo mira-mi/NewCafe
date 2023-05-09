@@ -28,7 +28,7 @@ double croissant = 3.00;
 char answer = 0;
 int amount = 0;
 int money = 0;
-float change = 0.00;
+double change = 0.00;
 
 int main()
 {
@@ -181,8 +181,11 @@ int main()
 	int dimes = change / .10;
 	change = std::fmod(change, .10);//change % 10;
 
-	int nickels = change / .05;
-	change = std::fmod(change, .05);//change % 5;
+	int nickels = change / 0.05;
+	//change = std::fmod(change, .05); //change % 5;
+
+	//int pennies = change;
+	//change = std::fmod(change, .01);//change % 1
 
 	
 
@@ -191,7 +194,7 @@ int main()
 	cout << "The number of quarters is = " << quarters << endl;
 	cout << "The number of dimes is = " << dimes << endl;
 	cout << "The number of nickels is = " << nickels << endl;
-	//cout << "The number of pennies is = " << cent << endl;
+	//cout << "The number of pennies is = " << pennies << endl;
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
