@@ -187,11 +187,11 @@ int main()
 		int dimes = change / 0.10;
 		change = std::fmod(change, 0.10);//change % 10;
 
-		int nickels = (change / 0.05) - change;
-		change = std::fmod(change, 0.05); //change % 5;
+		int nickels = (change) / 0.05;
+		//change = std::fmod(change, 0.05); //change % 5;
 		
-		int pennies = change;
-		//change = std::fmod(change, .01);//change % 1
+		//int pennies = change;
+		//change = std::fmod(change, 0.01);//change % 1
 
 		cout << "The number of dollars is = " << dollar << endl;
 		cout << "The number of quarters is = " << quarters << endl;
