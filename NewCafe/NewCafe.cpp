@@ -168,21 +168,20 @@ int main()
 	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
 	cout << setprecision(2) << fixed << "Your change is $" << change << ".";
 	cout << " " << endl;
-
 	int dollar = change / 1;
-	change = change / 1;
+	change = change - dollar;
 
-	int quarters = change / 25;
-	change = change / 25;
+	int quarters = change * .25;
+	change = change - quarters;
 
-	int dimes = change / 10;
-	change = change / 10;
+	int dimes = change * .10;
+	change = change - dimes;
 
-	int nickels = change / 5;
-	change = change / 5;
+	int nickels = change * .05;
+	change = change - nickels;
 
 
-	cout << "The # of dollars is =  " << dollar << endl;
+	cout << "The number of dollars is =  " << dollar << endl;
 	cout << "The number of quarters is = " << quarters << endl;
 	cout << "The number of dimes is = " << dimes << endl;
 	cout << "The number of nickels is = " << nickels << endl;
