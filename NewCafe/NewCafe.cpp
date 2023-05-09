@@ -7,6 +7,8 @@
 #include <math.h>
 #include <iomanip>
 #include <cmath>
+#include <stdlib.h>
+
 
 using namespace std;
 // ascii art is from https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Slant&text=Magical%20Cafe
@@ -32,8 +34,9 @@ int main()
 {
 	// only added the ascii art because I love the way it looks and it makes it personal
 
-
-	cout << "Welcome to the " << endl;
+	system("Color D0");
+	// makes the bg purple and the words black
+	cout <<  "Welcome to the " << endl;
 	cout << R"(
     __  ___            _            __   ______      ____   
    /  |/  /___ _____ _(_)________ _/ /  / ____/___ _/ __/__ 
