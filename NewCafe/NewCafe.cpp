@@ -157,7 +157,7 @@ int main()
 		cout << "Awwww, you don't want donuts :( " << endl;
 		cout << "An amount of $" << total << " has been added to your bag.";
 	}
-
+	cout << " " << endl;
 	cout << "Now you're ready for checkout." << endl;
 	cout << "Your total is $" << total << ".";
 	cout << " " << endl;
@@ -181,11 +181,10 @@ int main()
 	int dimes = change / .10;
 	change = std::fmod(change, .10);//change % 10;
 
-	int nickels = change / 0.05;
-	change = std::fmod(change, 0.05);//change % 5;
+	int nickels = change / .05;
+	change = std::fmod(change, .05);//change % 5;
 
-	int cent = change / .01;
-	change = std::fmod(change, .01);//change % 0.1
+	
 
 
 	cout << "The number of dollars is =  " << dollar << endl;
