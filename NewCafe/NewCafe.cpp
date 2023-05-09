@@ -169,7 +169,7 @@ int main()
 	change = money - total;
 
 	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
-	cout << setprecision(2) << fixed << "Your change is $" << change << ".";
+	cout << "Your change is $" << change << ".";
 	cout << " " << endl;
 	//got this from stack overflow and it saved my life
 	int dollar = change / 1;
@@ -181,8 +181,8 @@ int main()
 	int dimes = change / .10;
 	change = std::fmod(change, .10);//change % 10;
 
-	int nickels = change / .05;
-	change = std::fmod(change, .05);//change % 5;
+	int nickels = change / 0.05;
+	change = std::fmod(change, 0.05);//change % 5;
 
 	int cent = change / .01;
 	change = std::fmod(change, .01);//change % 0.1
@@ -192,7 +192,7 @@ int main()
 	cout << "The number of quarters is = " << quarters << endl;
 	cout << "The number of dimes is = " << dimes << endl;
 	cout << "The number of nickels is = " << nickels << endl;
-	cout << "The number of pennies is = " << cent << endl;
+	//cout << "The number of pennies is = " << cent << endl;
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
