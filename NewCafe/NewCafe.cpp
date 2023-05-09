@@ -6,6 +6,7 @@
 #include <iostream>
 #include <math.h>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 // ascii art is from https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Slant&text=Magical%20Cafe
@@ -25,6 +26,7 @@ double croissant = 3.00;
 char answer = 0;
 int amount = 0;
 double money = 0.00;
+double change = 0.00;
 
 int main()
 {
@@ -161,25 +163,24 @@ int main()
 	cout << "Your entered: $" << money << ".";
 	cout << " " << endl;
 	//std::setprecision(money = money - total);
-	money = money - total;
+	change = money - total;
 
 	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
-	cout << setprecision(2) << fixed << "Your change is $" << money << ".";
+	cout << setprecision(2) << fixed << "Your change is $" << change << ".";
 	cout << " " << endl;
 
-	int dollar = money / 1;
-	money = money - dollar;
+	int dollar = change / 1;
+	change = change / 1;
 
-	int quarters = money / .25;
-	money = money - quarters;
+	int quarters = change / .25;
+	change = change / 25;
 
-	int dimes = money / .10;
-	money = money - dimes;
+	int dimes = change / .10;
+	change = change / 10;
 
-	int nickels = money / .05;
-	money = money - nickels;
+	int nickels = change / .05;
+	change = change / 5;
 
-	
 
 	cout << "The # of dollars is =  " << dollar << endl;
 	cout << "The number of quarters is = " << quarters << endl;
