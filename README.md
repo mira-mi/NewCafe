@@ -3,6 +3,8 @@
 
 This is my final assignment for my C++ 2 class and I was tasked with making a cafe.
 I've done this before and I decided to learn another way to make this easier to navigate, my biggest issue so far is getting the map to actually show when you compile it.
+## Update
+- map doesn't exist
 
 This is what we have to do for the project which I will paste below.
 - your job is to model a cafe. you must have a menu of 5 items with prices. users can choose items and pay. they can only pay in whole dollars and you must give change in
