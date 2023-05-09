@@ -28,7 +28,7 @@ double croissant = 3.00;
 char answer = 0;
 int amount = 0;
 int money = 0;
-double change = 0.00;
+float change = 0.00;
 
 int main()
 {
