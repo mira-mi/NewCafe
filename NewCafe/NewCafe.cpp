@@ -30,6 +30,7 @@ int amount = 0;
 int money = 0;
 //double change = 0.00;
 
+
 int main()
 {
 	// only added the ascii art because I love the way it looks and it makes it personal
