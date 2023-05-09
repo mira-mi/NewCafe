@@ -192,6 +192,7 @@ int main()
 	cout << "The number of quarters is = " << quarters << endl;
 	cout << "The number of dimes is = " << dimes << endl;
 	cout << "The number of nickels is = " << nickels << endl;
+	cout << "The number of pennies is = " << cent << endl;
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
