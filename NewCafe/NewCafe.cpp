@@ -186,8 +186,9 @@ int main()
 		int dimes = change / 0.10;
 		change = std::fmod(change, 0.10);//change % 10;
 
-		float nickels = change / 0.05;
-		change = std::fmod(change, .05); //change % 5;
+		int nickels = change;
+		//change = std::fmodf(change, 0.05); //change % 5;
+		
 
 		//int pennies = change;
 		//change = std::fmod(change, .01);//change % 1
