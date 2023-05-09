@@ -165,6 +165,7 @@ int main()
 
 	//set precision suggestion was from stack overflow, I wanted to get decimals involved but I had money as an int
 	cout << setprecision(2) << fixed << "Your change is $" << money << ".";
+	cout << " " << endl;
 
 	int dollar = money / 1;
 	money = money - dollar;
@@ -178,11 +179,13 @@ int main()
 	int nickels = money / .05;
 	money = money - nickels;
 
-	int cents = money / .01;
+	
+
 	cout << "The # of dollars is =  " << dollar << endl;
 	cout << "The number of quarters is = " << quarters << endl;
 	cout << "The number of dimes is = " << dimes << endl;
 	cout << "The number of nickels is = " << nickels << endl;
+	//cout << "The number of pennies is = " << pennies << endl;
 	cout << " " << endl;
 	cout << "Thank you for shopping with us!! Press any key to exit." << endl;
 
