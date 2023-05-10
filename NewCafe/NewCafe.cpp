@@ -19,11 +19,11 @@ static float tax = 2.50;
 // actual food offered
 //had outside help to make this feel more believable
 //my bf goes to places like Stan's and Dunkin a lot so he really helped
-double bagel = 2.25;
-double fountaindrink = 1.50;
-double breakfastsandwich = 4.35;
-double donut = 1.25;
-double croissant = 3.00;
+float bagel = 2.25;
+float fountaindrink = 1.50;
+float breakfastsandwich = 4.35;
+float donut = 1.25;
+float croissant = 3.00;
 //user input
 char answer = 0;
 int amount = 0;
@@ -159,7 +159,7 @@ int main()
 		cout << "An amount of $" << total << " has been added to your bag.";
 	}
 
-	double change;
+	float change = 0.00;
 	
 	cout << " " << endl;
 	cout << "Now you're ready for checkout." << endl;
@@ -191,14 +191,14 @@ int main()
 		int nickels = (change) / 0.05;
 		//change = std::fmod(change, 0.05); //change % 5;
 		
-		//int pennies = change;
+		int pennies = change;
 		//change = std::fmod(change, 0.01);//change % 1
 
 		cout << "The number of dollars is = " << dollar << endl;
 		cout << "The number of quarters is = " << quarters << endl;
 		cout << "The number of dimes is = " << dimes << endl;
 		cout << "The number of nickels is = " << nickels << endl;
-		//cout << "The number of pennies is = " << pennies << endl;
+		cout << "The number of pennies is = " << pennies << endl;
 		cout << " " << endl;
 	}
 	else {
